@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch src --ext ts --exec ts-node src/creational/factory-method/good-code.ts"
+    "dev": "nodemon --watch src --ext ts --exec ts-node src/creational/factory-method/good.ts"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +12,7 @@
   "description": "",
   "devDependencies": {
     "nodemon": "^3.1.9",
+    "prettier": "3.4.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }
