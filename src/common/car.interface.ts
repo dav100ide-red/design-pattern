@@ -1,7 +1,12 @@
-type CarEngine = "V6" | "V8" | "V12" | "Electric";
+type FuelType = "diesel" | "petrol";
+export type Fuel = {
+    type: FuelType;
+    amount: number; //litri
+};
 
-export interface ICar {
+export interface ITransport {
     id: number;
-    engine: CarEngine;
-    seats: number;
+
+    deliver(): void;
+    addFuel(fuel: Fuel): void;
 }
